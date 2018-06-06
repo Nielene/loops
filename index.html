@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+	//var num = 1;
+	var num = 0;
+	while(num <= 100){
+		console.log(num);
+		//num++; //num = num + 1;
+		num+=2; //num = num + 2;
+	}
+
+	//create our loop
+	//can use if statement inside of loops and use loops inside of if statements
+	//double equal sign bc want to compare
+	//if put only num = 1 and no var, will get infinite loops. also bc not actually giving incrementation. put outside if statemnt but inside loop bc still want to increment whether even or notl
+	var num = 1;
+	while(num<=100){
+		if(num%2==0){
+			console.log(num + ' is even!!');
+		}
+		num++;
+	}
+
+	//make loop that prints out the numbers from 15 to 3:
+	
+	//while(num<=15 && num>=3){
+	var num = 15;
+	while(num>=3){
+		console.log(num)
+		num--;
+		//num-=3;
+	}
+
+	//when come to my page, my website is private, so only letting you in if you give the right password; keep aksing for it if give wrong password; let you in if give right password
+	var password = prompt('What\'s the password?');
+	// while(password != 'chocolate' || password == null){
+	while(password != 'chocolate'){
+		password = prompt('Wrong password! Try again.');
+	}
+</script>
+
+
+	<!-- want to display all the numbers from 1 to 20 on the webpage -->
+	
+	<h1 id= "display"></h1>
+
+<script>
+	// have to use += before num instead of just = num or else will override itselft constantly and have only a 20.
+	var num = 1;
+	while(num<=20){
+		// document.getElementById("display").innerHTML += num +" ";
+		// to get it in new lines.
+		document.getElementById("display").innerHTML += num+"<br>";
+		console.log(num);
+		num++;
+	}
+</script>
+
+
+</body>
+</html>
